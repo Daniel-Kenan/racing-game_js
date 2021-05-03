@@ -1,0 +1,30 @@
+@font-face {
+    font-family: main;
+    src: url('/font/yorkwhiteletter.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* body,
+html {
+    padding: 3px;
+    margin: 0;
+} */
+
+body{background-image: url('/images/home&utility/settings.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;}
+.opt {
+    display: block;
+    margin: auto;
+    width: 5%;
+    padding: 0 1.9%;
+
+}
+
+form{font-size: large;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;
+     color:rgb(226, 228, 229);}

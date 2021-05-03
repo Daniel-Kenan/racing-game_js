@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+#road{display: block;
+      position: static;}
+
+#car {
+    top: 57%;
+    position: absolute;
+    width: 29%;
+    height: 42.5%;}
+
+#speedometer{
+    top:2% ;  
+}
+
+#distance{top: 10%;}
+.show-user {
+    background-color:rgba(112, 128, 144, 0.205);
+    position: absolute;
+    display: block;
+    left: 83.5%;
+    width: 16%;
+    height: 7%;
+    text-align: center;
+    padding: 1% 0;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#trafficLight{display: block;
+              width: 10%;
+              height: 30%;
+              top:6%;
+              position: absolute;
+              left:45%;}
+
+#light{position: absolute;
+        display: block;
+        border-radius: 50%;
+        background-color:red;
+        width: 3.4%;
+        height: 30px;
+        left: 48.3%;
+        top: 9%;
+        z-index: 1;}

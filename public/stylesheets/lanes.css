@@ -1,0 +1,20 @@
+.lane-A{
+  display: block;
+  height: 50px;
+  width: 50px;
+  /* background-color: green; */
+  position: absolute;
+  top: 35%;
+  left:45%;
+}
+
+.lane-B{
+    display: block;
+    height: 50px;
+    width:  50px;
+    /* background-color: red; */
+    position: absolute;
+    top: 35%;
+    left: 51.5%;
+}
+

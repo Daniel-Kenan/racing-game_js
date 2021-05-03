@@ -1,0 +1,38 @@
+@font-face {
+    font-family: main;
+    src:url('/font/yorkwhiteletter.ttf');
+}
+
+body {
+    background-image: url('/images/home&utility/home.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    /* font-family: m; */
+    opacity: 1;
+}
+
+
+input[type=button] {
+    border: 1px transparent inset;
+    font-size: xx-large;
+    background-color: rgba(245, 113, 4, 0.15);
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    width: 300px;
+    padding-left: 10px;
+    margin-left: 0;
+    text-align: left;
+    font-weight: bolder;
+    /* color:; */
+
+}
+
+input[type=button]:hover {
+    font-size: 40px;
+    width: 315px;
+    color: orange;
+    border: 3px rgba(104, 4, 4, 0.664) outset ;
+    height: 55px;
+    padding-left:15px ;
+    background-color: rgba(92, 155, 73, 0.61);}
