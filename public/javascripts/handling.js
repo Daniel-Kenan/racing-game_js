@@ -5,3 +5,10 @@ function handle(speed) {
     }
     Developer.innerHTML = `${handling} - handling`;
 };
+let displacement_interval = velocity ;
+setInterval(()=>{
+    if ( velocity > 0 ){
+        displacement += 1/(velocity*0.5)*(velocity*0.049);
+        displacement = parseFloat( displacement.toFixed(2)) ;
+    }
+},500)

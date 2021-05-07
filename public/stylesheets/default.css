@@ -16,7 +16,8 @@ html,body {
     top: 57%;
     position: absolute;
     width: 29%;
-    height: 42.5%;}
+    height: 42.5%;
+    z-index: 1;}
 
 #speedometer{
     top:2% ;  

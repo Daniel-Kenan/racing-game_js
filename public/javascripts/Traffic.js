@@ -1,4 +1,3 @@
-/// 'use strict '
 
 function iscollision(positions) {
     let {
@@ -20,12 +19,15 @@ const resetgame = () => null;
 const laneA = document.getElementsByClassName('lane-A')[0],
       laneB = document.getElementsByClassName('lane-B')[0];
 
-let laneBpos = 35 ;let carWidth  = 50 ; 
+  
 
 setInterval(()=>{
-laneBpos += 1 ;carWidth += 16;
+if(test_move){laneBpos += 1 ;carWidth += 13; carHeight+=5 ;
 laneB.style.top = `${laneBpos}%`;
-laneB.style.width = `${carWidth+2}px`;
-laneB.style.height = `${carWidth+1}px`;
- if (laneBpos == 48 || laneBpos < 35){laneB.style.display = 'none'}
+laneB.style.width = `${carWidth}px`;
+laneB.style.height = `${carHeight}px`;
+ if (laneBpos == 48 || laneBpos < 35){laneB.style.display = 'none'}else{setTimeout(()=>{
+    laneB.style.display = 'block' ;
+ },1000)}}
+
 },1000)

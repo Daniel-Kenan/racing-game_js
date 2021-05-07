@@ -19,12 +19,11 @@ function Controls() {
             road.style.height = `${innerHeight}px`,
             car.style.top = `${innerHeight - (innerHeight*40/100)}px`;
         if (handling == 0) {
-            road.setAttribute('src', 'images/road/static-road.jpeg'); i = 0 ;
-            
+            road.setAttribute('src', 'images/road/static-road.jpeg'); i = 0 ;test_move = false ;   
         }
     })
     addEventListener('keyup', (e) => {
         if (e.key == down) road.setAttribute('src', 'images/road/road.gif');
-        if (e.key == down) car.setAttribute('src', 'images/cars/nissan gtr/rear.png'), handle('increase');
+        if (e.key == down) car.setAttribute('src', 'images/cars/nissan gtr/rear.png'), handle('increase');test_move = true;
     })
 }();

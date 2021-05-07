@@ -6,5 +6,6 @@ setTimeout(()=>acceleration(),4000)
             handling += 0.5,
             velocity = i;
         Developer.innerHTML = `${handling} - handling`;
+        
     }, 700)
 };

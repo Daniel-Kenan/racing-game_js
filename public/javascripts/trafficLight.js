@@ -13,4 +13,16 @@ setTimeout(() => {
 setTimeout(() => {
     light.style.top = "25.2%";
     light.style.backgroundColor = "green";
+    test_move = true ;
 }, 4500);
+
+
+setInterval(()=>{
+    if(!test_move){
+carWidth -= 16;
+laneBpos -= 1 ;
+laneB.style.top = `${laneBpos}%`;
+laneB.style.width = `${carWidth}px`;
+laneB.style.height = `${carHeight}px`;
+    }
+},500)

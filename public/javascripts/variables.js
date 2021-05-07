@@ -17,10 +17,14 @@ car.style.left = `${position}%`;
 var velocity   =  0;
 var handling = 0 ;
 var i = 0 ;
+var test_move = null ;
+var displacement = 0 ;
 
+var laneBpos = 35 , carWidth  = 50 , carHeight = carWidth + 4;
 
 setInterval(()=>{
-    speed.innerHTML = `${velocity} km/h`
+    speed.innerHTML = `${velocity} km/h`;
+    distance.innerText = `${displacement} km`
     i += 1 ;
     if(handling > 2 && velocity < 260) velocity = i;
     if(i > 260) i -=4 , velocity = i;
