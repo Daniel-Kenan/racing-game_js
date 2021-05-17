@@ -12,11 +12,12 @@ app.use(express.urlencoded({
 }))
 
 app.set('view engine', 'ejs');
-
+app.get('/garage' , (req, res)=>res.render('Garage'))
 app.get('/', (req, res) => res.render('Start'));
 app.get('/entry', (req, res) => res.render('entry', file))
 app.get('/settings', (req, res) => res.render('setting'))
-app.get('About', (req, res) => res.render('Donate'))
+app.get('/about', (req, res) => res.render('About'))
+// app.get('/
 app.post('/controls', (req, res) => {
 
     file['name'] = req.body.name;
