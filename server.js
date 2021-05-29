@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
-const PORT = 8080 || process.env.PORT;
+const PORT =  process.env.PORT || 3000 ; 
 const fs = require('fs');
 const filename = __dirname + '/Settings.json';
 const file = require(filename);
