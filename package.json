@@ -7,7 +7,7 @@
     "start" : "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daniel Kenan Slinda",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
