@@ -1,4 +1,5 @@
-setTimeout(()=>acceleration(),4000)
+function four(){
+    setTimeout(()=>acceleration(),4000)
 
  function acceleration() {
     setInterval(() => {
@@ -9,3 +10,6 @@ setTimeout(()=>acceleration(),4000)
         
     }, 700)
 };
+}
+
+

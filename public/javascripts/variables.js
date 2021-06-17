@@ -19,15 +19,19 @@ var handling = 0 ;
 var i = 0 ;
 var test_move = null ;
 var displacement = 0 ;
+const laneA = document.getElementsByClassName('lane-A')[0],
+      laneB = document.getElementsByClassName('lane-B')[0];
 
 var laneBpos = 35 , carWidth  = 50 , carHeight = carWidth + 4;
-
-setInterval(()=>{
+function one(){
+   setInterval(()=>{
     speed.innerHTML = `${velocity} km/h`;
     distance.innerText = `${displacement} km`
     i += 1 ;
     if(handling > 2 && velocity < 260) velocity = i;
     if(i > 260) i -=4 , velocity = i;
     if(handling == 0){ i -=1 }
-}, 100)
+}, 100) 
+}
+
 

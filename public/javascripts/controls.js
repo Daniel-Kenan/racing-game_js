@@ -1,4 +1,4 @@
-
+// onload  = 
 void
 function Controls() {
     addEventListener("keydown", (e) => {

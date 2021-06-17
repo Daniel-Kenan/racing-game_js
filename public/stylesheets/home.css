@@ -1,3 +1,4 @@
+*{box-sizing: border-box;}
 @font-face {
     font-family: main;
     src:url('/font/yorkwhiteletter.ttf');
@@ -19,18 +20,22 @@ input[type=button] {
     background-color: rgba(245, 113, 4, 0.15);
     font-family:Arial, Helvetica, sans-serif;
     margin-left: 10px;
-    width: 300px;
+    width: 30%;
+    max-width: 300px;
     padding-left: 10px;
     margin-left: 0;
     text-align: left;
     font-weight: bolder;
     /* color:; */
+    font-size: 200%;
 
 }
 
 input[type=button]:hover {
-    font-size: 40px;
-    width: 315px;
+    
+
+    width: 50%;
+    max-width: 315px;
     color: orange;
     border: 3px rgba(104, 4, 4, 0.664) outset ;
     height: 55px;

@@ -1,4 +1,5 @@
-
+function six(){
+    
 function iscollision(positions) {
     let {
         x1,
@@ -14,10 +15,9 @@ function iscollision(positions) {
     return bool
 }
 
-const resetgame = () => null;
+// const resetgame = () => null;
 
-const laneA = document.getElementsByClassName('lane-A')[0],
-      laneB = document.getElementsByClassName('lane-B')[0];
+
 
   
 
@@ -31,3 +31,5 @@ laneB.style.height = `${carHeight}px`;
  },1000)}}
 
 },1000)
+
+}
