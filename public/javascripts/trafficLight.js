@@ -20,11 +20,11 @@ function five(){
     
     setInterval(()=>{
         if(!test_move){
-    carWidth -= 16;
     laneBpos -= 1 ;
     laneB.style.top = `${laneBpos}%`;
-    laneB.style.width = `${carWidth}px`;
-    laneB.style.height = `${carHeight}px`;
+    laneB.style.width = `auto`;
+    laneB.style.height = `${20}%`;
+    
         }
     },500)
 }

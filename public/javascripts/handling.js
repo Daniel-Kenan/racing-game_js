@@ -1,6 +1,5 @@
-// onload =
-function two(){
-   function handle(speed) {
+
+ function handle(speed) {
     if (handling > 0 && speed == "decrease") {
         handling -= 0.5  ; --i;--i; i-=2 ;
         if(velocity%2 == 0 ) velocity *= 0.5 ;   
@@ -8,6 +7,10 @@ function two(){
     Developer.innerHTML = `${handling} - handling`;
 };
 let displacement_interval = velocity ;
+
+function two(){
+  
+// distance measure         
 setInterval(()=>{
     if ( velocity > 0 ){
         displacement += 1/(velocity*0.5)*(velocity*0.049);
