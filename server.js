@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
-const PORT =  process.env.PORT || 8080 ; 
+const PORT =  process.env.PORT || 3000 ; 
 const fs = require('fs');
 const filename = __dirname + '/Settings.json';
 const file = require(filename);
@@ -17,7 +17,7 @@ app.get('/', (req, res) => res.render('Start'));
 app.get('/entry', (req, res) => res.render('entry', file))
 app.get('/settings', (req, res) => res.render('setting'))
 app.get('/about', (req, res) => res.render('About'))
-
+app.get('/game-over', (req,res) => res.render('gameover'))
 app.post('/controls', (req, res) => {
 
     file['name'] = req.body.name;

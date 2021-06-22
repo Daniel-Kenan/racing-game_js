@@ -25,7 +25,9 @@ var displacement = 0 ;
 const laneA = document.getElementsByClassName('lane-A')[0],
       laneB = document.getElementsByClassName('lane-B')[0];
 
-var laneBpos = 35 , carWidth  = 50 , carHeight = carWidth + 4;
+var laneBpos = 35 , carWidth  = 20 , carHeight = carWidth + 4, carWidthA = carWidth ; 
+var laneApos = 30, carHeightA = carHeight ;
+
 
 function one(){
    setInterval(()=>{

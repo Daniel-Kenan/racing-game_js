@@ -3,13 +3,17 @@
 <head>
     <link rel="stylesheet" href="stylesheets/default.css">
    <link rel="stylesheet" href="stylesheets/lanes.css">
+   <link rel="stylesheet" href="stylesheets/loader.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game on </title>
 </head>
 <body>
-    <div id="developer" class="show-user" style="left: 25%; top: 30%;height: 30%;width: 50%; display:none"></div>
+    <div class="loader-container" style="display:none">
+        <div class="loader"></div>
+    </div>
+    <div id="developer" class="show-user" style="left: 25%; top: 30%;height: 30%;width: 50%; display: none;"></div>
     <div id = "speedometer" class="show-user"> </div> 
     <div id = "distance" class="show-user"></div>
     <img src="images/road/static-road.jpeg" style="width: 100%;" id="road">

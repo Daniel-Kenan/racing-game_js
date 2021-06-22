@@ -20,11 +20,20 @@ function five(){
     
     setInterval(()=>{
         if(!test_move){
-    laneBpos -= 1 ;
+           
+    laneBpos -= 0.001 ;
+    carWidth -= 0.1 ;
+    carWidthA -= 0.3;
+    laneApos += Math.random();
     laneB.style.top = `${laneBpos}%`;
-    laneB.style.width = `auto`;
-    laneB.style.height = `${20}%`;
-    
+    laneB.style.width = `${carWidth}%`;
+    laneB.style.height = `auto`;
+    laneApos -= Math.random() ;
+    laneA.style.top = `${laneApos}%`;
+    laneA.style.width = ` ${carWidthA}%`;
+    laneA.style.height = `auto`;  
         }
-    },500)
+    },10)
+   setInterval(()=> {if(carWidth < 10){laneB.style.display = "none"}},10)
+   setInterval(()=> {if(carWidthA < 10){laneA.style.display = "none"}},10)
 }
